@@ -2,6 +2,10 @@
 # Distributed under the MIT software license, see the accompanying
 # file LICENSE or https://opensource.org/license/MIT.
 
+# Pattern rule to print variables, e.g. make print-top_srcdir
+print-%: FORCE
+	@echo '$*'='$($*)'
+
 ACLOCAL_AMFLAGS = -I build-aux/m4
 SUBDIRS = src
 
