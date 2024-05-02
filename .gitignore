@@ -1,0 +1,13 @@
+autom4te.cache/
+build-aux/
+Makefile
+Makefile.in
+aclocal.m4
+configure
+configure~
+config.log
+config.status
+src/*.o
+src/.deps
+src/proteggo-cli
+src/proteggo-node
